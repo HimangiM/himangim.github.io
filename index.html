@@ -93,10 +93,10 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-         <tr>
-            <!-- <td style="padding:0 0 0 20px;"><span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;">Research Topic: Neural Physics-Based Simulation</span></td> -->
-          </tr>
+        <span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;padding:20px">Neural Physics-Based Simulation / 3D </span>
           
         <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -125,11 +125,13 @@
               <p> UniPhy is a unified latent-conditioned neural model which learns a common latent space to encode the properties of diverse materials. At inference, given motion observations for a system with unknown material parameters, UniPhy allows material inference via differentiable simulation-based latent optimization.</p>
             </td>
           </tr>	
+          </tbody>
+        </table>
 
-          <tr>
-            <!-- <td style="padding:0 0 0 20px;"><span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;">Research Topic: Multi-Modal Machine Learning / Large Video-Language Models</span></td> -->
-          </tr>
-          
+        <br>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+          <span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;padding:20px">Multi-Modal Representation Learning / Large Video-Language Models</span>
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
@@ -188,7 +190,10 @@
                 and (2) to learn representations that focus on the visual state changes caused by audible interactions. </p>
             </td>
           </tr>
+          </table>
           
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+          <span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;padding:20px">Self-Supervised Learning / 3D Point Clouds</span>
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -219,35 +224,6 @@
               annotations are unavailable. We achieve this via inpainting where a region of the point cloud is removed and the network is trained to complete this removed region.</p>
             </td>
           </tr>
-          
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='prl_image'>
-                    <a href="images/PRL-Graphical-Abstract.png"><img style="width:140%;max-width:140%" alt="profile photo" src="images/PRL-Graphical-Abstract.png" class="hoverZoomLink"></a>
-                </div>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://link.springer.com/article/10.1007/s10044-021-01020-9">
-              <papertitle>Harnessing emotions for depression detection</papertitle>
-              </a>
-              <br>
-              <a href="">Sahana Prabhu Muraleedhara</a>
-              <strong>Himangi Mittal</strong>,
-              <a href="">Rajesh Varagani</a>,
-              <a href="">Sweccha Jha</a>,
-              <a href="">Shivendra Singh</a>
-              <br>
-              <em><strong>[Pattern Analysis and Applications Journal]</strong></em>
-              <br>
-              <a href="https://link.springer.com/article/10.1007/s10044-021-01020-9">Paper</a>
-              <p></p>
-              <p>A method for multi-modal depression detection using audio, video, and textual modalities using LSTMs. This work leverages emotions to detect an early indication of 
-                depression.</p>
-            </td>
-          </tr>
-
 
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -283,6 +259,10 @@
                 These self-supervised losses allow us to train our method on large unlabeled autonomous driving datasets.</p>
             </td>
           </tr>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+          <span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;padding:20px">Past Research Works (on Graphs)</span>
+          
 
 
           <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()">
@@ -365,6 +345,34 @@
               <p></p>
               <p>Presents trajectory analysis of spatio-temporal graph nodes using DeepWalk algorithm in NetworkX (Python) for classification and detecting 
                 changing points of interest using SVMs.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='prl_image'>
+                    <a href="images/PRL-Graphical-Abstract.png"><img style="width:140%;max-width:140%" alt="profile photo" src="images/PRL-Graphical-Abstract.png" class="hoverZoomLink"></a>
+                </div>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/article/10.1007/s10044-021-01020-9">
+              <papertitle>Harnessing emotions for depression detection</papertitle>
+              </a>
+              <br>
+              <a href="">Sahana Prabhu Muraleedhara</a>
+              <strong>Himangi Mittal</strong>,
+              <a href="">Rajesh Varagani</a>,
+              <a href="">Sweccha Jha</a>,
+              <a href="">Shivendra Singh</a>
+              <br>
+              <em><strong>[Pattern Analysis and Applications Journal]</strong></em>
+              <br>
+              <a href="https://link.springer.com/article/10.1007/s10044-021-01020-9">Paper</a>
+              <p></p>
+              <p>A method for multi-modal depression detection using audio, video, and textual modalities using LSTMs. This work leverages emotions to detect an early indication of 
+                depression.</p>
             </td>
           </tr>
 <!-- 
