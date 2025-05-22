@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Houdini Visualizations Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/himangi.jpg">
+  <style>
+    body { background: #fff; font-family: sans-serif; margin: 0; }
+    .container { max-width: 1000px; margin: 40px auto 0 auto; padding: 0 16px; }
+    h2 { color: #000; text-align: center; margin-bottom: 24px; }
+    #houdini-gallery { display: flex; flex-wrap: wrap; gap: 28px; justify-content: flex-start; }
+    .houdini-thumb { 
+      max-width: 48vw;
+      max-height: 380px;
+      width: 460px;
+      height: 320px;
+      aspect-ratio: auto;
+      cursor: pointer; 
+      border-radius: 10px; 
+      box-shadow: 0 2px 8px #aaa; 
+      object-fit: contain;
+      transition: transform 0.2s;
+      background: #f5f5f5;
+    }
+    .houdini-thumb:hover { transform: scale(1.04); }
+    #lightbox-modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; }
+    #lightbox-close { position: absolute; top: 30px; right: 40px; font-size: 2.5em; color: white; cursor: pointer; font-family: sans-serif; }
+    #lightbox-img { max-width: 90vw; max-height: 80vh; border-radius: 12px; box-shadow: 0 6px 24px #1976d2a0, 0 2px 8px #aaa; }
+    #lightbox-caption { color: #fff; text-align: center; margin-top: 18px; font-size: 1.1em; }
+    .back-link { display: inline-block; margin-bottom: 32px; color: #1565c0; text-decoration: none; font-weight: 600; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <h2>Houdini Visualizations</h2>
+    <div id="houdini-gallery">
+      <img src="images/grid_animation.gif" alt="Grid Animation" class="houdini-thumb">
+      <video src="images/houdini/sand1.mp4" alt="Sand 1" class="houdini-thumb" autoplay loop muted playsinline></video>
+      <video src="images/houdini/water4.mp4" alt="Water 4" class="houdini-thumb" autoplay loop muted playsinline></video>
+      <video src="images/houdini/water5.mp4" alt="Water 5" class="houdini-thumb" autoplay loop muted playsinline></video>
+      <video src="images/houdini/water3.mp4" alt="Water 3" class="houdini-thumb" autoplay loop muted playsinline></video>
+      <video src="images/houdini/elastic1.mp4" alt="Elastic 1" class="houdini-thumb" autoplay loop muted playsinline></video>
+      <!-- <video src="images/houdini/water1.mp4" alt="Water 1" class="houdini-thumb" autoplay loop muted playsinline></video> -->
+      <video src="images/houdini/elastic2.mp4" alt="Elastic 2" class="houdini-thumb" autoplay loop muted playsinline></video>
+      <video src="images/houdini/water2.mp4" alt="Water 2" class="houdini-thumb" autoplay loop muted playsinline></video>
+
+    </div>
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal">
+      <span id="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption"></div>
+    </div>
+  </div>
+  <script>
+    // Lightbox logic
+    const thumbs = document.querySelectorAll('.houdini-thumb');
+    const modal = document.getElementById('lightbox-modal');
+    const modalImg = document.getElementById('lightbox-img');
+    const modalCaption = document.getElementById('lightbox-caption');
+    const closeBtn = document.getElementById('lightbox-close');
+    thumbs.forEach(thumb => {
+      thumb.onclick = function() {
+        modal.style.display = 'flex';
+        modalImg.src = this.src;
+        modalCaption.textContent = this.alt;
+      };
+    });
+    closeBtn.onclick = function() {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    };
+    modal.onclick = function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        modalImg.src = '';
+      }
+    };
+    document.addEventListener('keydown', function(e) {
+      if (modal.style.display === 'flex' && (e.key === 'Escape' || e.key === 'Esc')) {
+        modal.style.display = 'none';
+        modalImg.src = '';
+      }
+    });
+  </script>
+</body>
+</html>
