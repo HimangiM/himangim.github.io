@@ -20,7 +20,9 @@
               <p style="text-align:center">
                 <name>Himangi Mittal</name>
               </p>
-              <p style="text-align:justify;">I am a Ph.D. student in the <a href="https://www.ri.cmu.edu/">Robotics Institute (RI)</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University (CMU)</a>, working with <a href="https://shubhtuls.github.io/">Prof. Shubham Tulsiani</a>. My research focuses on building physics-grounded AI agents, world models, and differentiable simulation. I am currently collaborating with Microsoft on 4D asset generation research. </p>
+              <p style="text-align:justify;">I am a Ph.D. student in the <a href="https://www.ri.cmu.edu/">Robotics Institute (RI)</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University (CMU)</a>, working with <a href="https://shubhtuls.github.io/">Prof. Shubham Tulsiani</a>. 
+                My research focuses on building physics-grounded AI agents, video generation via preference-based RL optimization, and differentiable simulation. 
+                I am currently collaborating with Microsoft on Computer-Use-Agents (CUA), GUI grounding, Coding Agents, and 4D asset generation research. </p>
                 <p>
                 I graduated with a Master of Science in Robotics <a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-robotics/">(MSR)</a> from 
                 the Robotics Institute at Carnegie Mellon University where I worked with <a href="http://www.cs.cmu.edu/~abhinavg/">Prof. Abhinav Gupta</a> and collaborated with <a href="https://pedro-morgado.github.io/">Prof. Pedro Morgado</a> at UW-Madison. Before my Master's, I worked as a Research Assistant at CMU with 
@@ -118,8 +120,70 @@
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-        <span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;padding:20px">Neural Physics Simulation / 3D </span>
-          
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one" style="display:flex;justify-content:center;align-items:center;">
+              <div class="two" id='cvpr_4dgen_image'>
+                    <a href="images/arxiv_2026.png"><img style="width:140%;max-width:140%;display:block;margin:auto;" alt="" src="images/arxiv_2026.png" class="hoverZoomLink"></a>
+              </div>
+                <div class="two" id='gui_grounding_image'>
+              </div>
+            </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2604.13019">
+              <papertitle>See, Point, Refine: Multi-Turn Approach to GUI Grounding with Visual Feedback</papertitle>
+              </a>
+              <br>
+              <strong>Himangi Mittal</strong>,
+              <a href="https://g1910.github.io/">Gaurav Mittal</a>,
+              <a href="https://scholar.google.com/citations?user=zlm3mZQAAAAJ&hl=en">Nelson Daniel Troncoso</a>,
+              <a href="https://www.microsoft.com/en-us/research/people/yuhu/">Yu Hu</a>
+              <br>
+              <a href="https://arxiv.org/pdf/2604.13019">Arxiv</a> / 
+              <a href="https://github.com/microsoft/precision-cua-bench">Code</a>
+              <br>
+              <p></p>
+              <p>We study pixel-precise GUI grounding for Computer Use Agents in dense coding interfaces. Instead of single-shot coordinate prediction, our agent iteratively refines cursor localization using visual feedback from previous attempts, enabling self-correction of displacement errors. Evaluated across GPT-5.4, Claude, and Qwen, multi-turn refinement significantly outperforms single-shot models in click precision and task success.</p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one" style="display:flex;justify-content:center;align-items:center;">
+                <div class="two" id='cvpr_4dgen_image'>
+                    <a href="images/cvpr_2026.gif"><img style="width:100%;max-width:100%;display:block;margin:auto;" alt="" src="images/cvpr_2026.gif" class="hoverZoomLink"></a>
+              </div>
+            </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2512.06158">
+              <papertitle>Tracking-Guided 4D Generation: Foundation-Tracker Motion Priors for 3D Model Animation</papertitle>
+              </a>
+              <br>
+              <a href="https://www.linkedin.com/in/susun71/">Su Sun</a>,
+              <a href="https://www.linkedin.com/in/cheng-zhao-8b873586/">Cheng Zhao</a>,
+              <strong>Himangi Mittal</strong>,
+              <a href="https://g1910.github.io/">Gaurav Mittal</a>,
+              <a href="https://www.microsoft.com/applied-sciences/people/rohith-kukkala">Rohith Kukkala</a>,
+              <a href="https://polytechnic.purdue.edu/profile/chen489">Yingjie Victor Chen</a>,
+              <a href="https://scholar.google.com/citations?user=DjfReA4AAAAJ&hl=en">Mei Chen</a>
+              <br>
+              <em><strong>[CVPR</em> 2026]</strong><br>
+              <a href="https://arxiv.org/abs/2512.06158">Arxiv</a>
+              <br>
+              <p></p>              
+              <p>Track4DGen is a two-stage framework that integrates foundation point-tracker motion priors into multi-view video diffusion and 4D Gaussian Splatting reconstruction. By enforcing dense feature-level point correspondences during generation and augmenting reconstruction with tracker-derived motion encoding and 4D Spherical Harmonics, it produces temporally stable, text-editable 4D assets surpassing existing baselines.</p>            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
         <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
@@ -154,7 +218,7 @@
         <br>
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
-          <span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;padding:20px">Multi-Modal Representation Learning / Large Video-Language Models</span>
+
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
@@ -217,7 +281,7 @@
           </table>
           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
-          <span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;padding:20px">Self-Supervised Learning / 3D Point Clouds</span>
+
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -285,7 +349,7 @@
           </tr>
           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
-          <span style="font-size:1.2em;color:#1565c0;font-weight:600;white-space:nowrap;padding:20px">Past Research Works (on Graphs)</span>
+
           
 
 
@@ -421,7 +485,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Academic Service/Volunteer Work</heading>
               <ul>
-              	<li><b>Reviewer Service:</b> ICCV 2021, AAAI 2022, WACV 2022, CVPR 2022, CVPR 2023 (+ Emergency reviewer), ICCV 2023, NeurIPS 2023, Pattern Recognition Journal, WACV 2024 (+ Emergency reviewer), ACCV 2024, CVPR 2024, ICLR 2024, ICML 2024, WACV 2025, CVPR 2025, ICLR 2025, ICML 2025, BMVC 2025, NeurIPS 2025.
+              	<li><b>Reviewer Service:</b> ICCV 2021, AAAI 2022, WACV 2022, CVPR 2022, CVPR 2023 (+ Emergency reviewer), ICCV 2023, NeurIPS 2023, Pattern Recognition Journal, WACV 2024 (+ Emergency reviewer), ACCV 2024, CVPR 2024, ICLR 2024, ICML 2024, WACV 2025, CVPR 2025, ICLR 2025, ICML 2025, BMVC 2025, NeurIPS 2025, ICLR 2026, CVPR 2026.
               	<li><b>Workshop Service:</b> Member of the organizing committee at <a href="https://sites.google.com/view/wicv-cvpr-2025">WiCV@CVPR 2025</a>, <a href="https://sites.google.com/view/wicv-cvpr-2024/home?authuser=0">WiCV@CVPR 2024</a>, <a href="https://sites.google.com/view/social-dei-cvpr-2024/">DEI Social Event</a>, and <a href="https://sites.google.com/view/cvpr2024-ecr-ai-social-event/home">Challenges/Opportunities for ECRs in Fast Paced AI Social Event!</a>
               	<li><b>Meta Reviewer Service:</b> WiCV@CVPR 2025, WiCV@CVPR 2024.
                 <li><b>Teaching Assistant:</b> 16-720A: Computer Vision (Fall 2025), 16-824: Visual Learning and Recognition (Spring 2024), 16-825: Learning for 3D Vision (Spring 2023).
