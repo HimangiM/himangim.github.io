@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Himangi Mittal</name>
               </p>
-              <p style="text-align:justify;">I am a fourth-year Ph.D. student at <a href="https://www.cmu.edu/">Carnegie Mellon University (CMU)</a> in the <a href="https://www.ri.cmu.edu/">Robotics Institute (RI)</a> working with <a href="https://shubhtuls.github.io/">Prof. Shubham Tulsiani</a>. My research focuses on developing agentic and self-improving video generation models for physical plausibility through RL post-training and model feedback. 
+              <p style="text-align:justify;">I am a fourth-year Ph.D. student at <a href="https://www.cmu.edu/">Carnegie Mellon University (CMU)</a> in the <a href="https://www.ri.cmu.edu/">Robotics Institute (RI)</a> working with <a href="https://shubhtuls.github.io/">Prof. Shubham Tulsiani</a>. My research focuses on developing agentic and self-improving video generation models for physical plausibility through RL post-training, on-policy self-distillation, and model feedback. 
                 <!-- My research focuses on building physics-grounded AI agents, video generation via preference-based RL optimization, and differentiable simulation.  -->
                 I have also collaborated with Microsoft on Computer-Use-Agents (CUA), GUI grounding, Coding Agents, and 4D asset generation research. </p>
                 <p>
@@ -54,7 +54,7 @@
               <a href="images/himangi2.jpg"><img style="width:80%;max-width:80%" alt="profile photo" src="images/himangi2.jpg" class="hoverZoomLink"></a>
               <div style="margin-top:10px;">
                 <a href="mailto:himangimittal@gmail.com">Email</a> &nbsp;/&nbsp;
-                <a href="data/Himangi_Mittal_Resume_November_2025.pdf">CV</a> &nbsp;/&nbsp;
+                <a href="https://drive.google.com/file/d/1jWwM8sb_2YbEG1ucdvkuuC3FO3oOZEMC/view?usp=drive_link">CV</a> &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user=n8Fc_w4AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://twitter.com/HimangiMittal">Twitter</a> &nbsp;/&nbsp;
                 <a href="https://github.com/HimangiM">Github</a> &nbsp;/&nbsp;
@@ -117,14 +117,46 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-             <div class="one" style="display:flex;justify-content:center;align-items:center;">
+             <div class="one" style="margin:auto;display:flex;justify-content:center;align-items:center;">
+              <div class="two" id='physguide'>
+                    <a href="images/physguide3.gif">
+                    	<img style="width:90%;max-width:140%;display:block;margin:auto;" alt="" src="images/physguide3.gif" class="hoverZoomLink">
+                    </a>
+              </div>
+                <div class="two" id='gui_grounding_image'>
+              </div>
+            </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2604.13019">
+              <papertitle>PhysGuide: Physics-Principles-Guided Learning for Physically Plausible Video Generation</papertitle>
+              </a>
+              <br>
+              <strong>Himangi Mittal</strong>,
+              <a href="https://www.contrib.andrew.cmu.edu/~hyojaep/">Hyojae Park</a>,
+              <a href="https://shubhtuls.github.io/">Shubham Tulsiani</a>
+              <br>
+              <em><strong>[under review]</strong></em><br>
+              <a href="https://drive.google.com/file/d/1X3fegnJz-KXTZLchbTHYmRa0vip18TYv/view?usp=drive_link">PDF</a> 
+              <br>
+              <p></p>
+              <p>PhysGuide is a physics-principles-guided preference post-training framework that learns a structured representation of physical behavior from real-world video demonstrations using physics principle vectors. During preference optimization, PhysGuide uses principle-wise differences between preferred and rejected videos to modulate their policy rewards and a physics-violation divergence penalty to scale the training signal according to the magnitude of physical disagreement, improving physical plausibility while preserving general video quality.</p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one" style="margin:auto;display:flex;justify-content:center;align-items:center;">
               <div class="two" id='cvpr_4dgen_image'>
-                    <a href="images/arxiv_2026.png"><img style="width:140%;max-width:140%;display:block;margin:auto;" alt="" src="images/arxiv_2026.png" class="hoverZoomLink"></a>
+                    <a href="images/arxiv_2026.png"><img style="width:140%;max-width:140%;display:block;margin-left:-20%;" alt="" src="images/arxiv_2026.png" class="hoverZoomLink"></a>
               </div>
                 <div class="two" id='gui_grounding_image'>
               </div>
@@ -140,6 +172,7 @@
               <a href="https://scholar.google.com/citations?user=zlm3mZQAAAAJ&hl=en">Nelson Daniel Troncoso</a>,
               <a href="https://www.microsoft.com/en-us/research/people/yuhu/">Yu Hu</a>
               <br>
+              <em><strong>[Agentic AI Benchmarks and Applications for Enterprise Tasks Workshop @ NeurIPS 2026]</strong></em><br>
               <a href="https://arxiv.org/pdf/2604.13019">Arxiv</a> / 
               <a href="https://github.com/microsoft/precision-cua-bench">Code</a>
               <br>
@@ -154,9 +187,9 @@
 
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-             <div class="one" style="display:flex;justify-content:center;align-items:center;">
+             <div class="one" style="margin:auto;display:flex;justify-content:center;align-items:center;">
                 <div class="two" id='cvpr_4dgen_image'>
-                    <a href="images/cvpr_2026.gif"><img style="width:100%;max-width:100%;display:block;margin:auto;" alt="" src="images/cvpr_2026.gif" class="hoverZoomLink"></a>
+                    <a href="images/cvpr_2026.gif"><img style="width:90%;max-width:100%;display:block;margin:auto;" alt="" src="images/cvpr_2026.gif" class="hoverZoomLink"></a>
               </div>
             </div>
             </td>
@@ -186,9 +219,9 @@
 
         <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-             <div class="one">
+             <div class="one" style="margin:auto;">
                 <div class="two" id='cvpr_uniphy_image'>
-                    <a href="images/grid_animation.gif"><img style="width:140%;max-width:140%" alt="" src="images/grid_animation.gif" class="hoverZoomLink"></a>
+                    <a href="images/grid_animation.gif"><img style="width:140%;max-width:140%;display:block;margin-left:-20%;" alt="" src="images/grid_animation.gif" class="hoverZoomLink"></a>
               </div>
             </div>
             </td>
@@ -221,9 +254,9 @@
 
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-             <div class="one">
+             <div class="one" style="margin:auto;">
                 <div class="two" id='neurips_image'>
-                    <a href="images/cvpr2024.gif"><img style="width:140%;max-width:140%" alt="" src="images/cvpr2024.gif" class="hoverZoomLink"></a>
+                    <a href="images/cvpr2024.gif"><img style="width:140%;max-width:140%;display:block;margin-left:-20%;" alt="" src="images/cvpr2024.gif" class="hoverZoomLink"></a>
               </div>
             </div>
             </td>
@@ -247,9 +280,9 @@
 
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-             <div class="one">
+             <div class="one" style="margin:auto;">
                 <div class="two" id='neurips_image'>
-                    <a href="images/neurips_final.gif"><img style="width:140%;max-width:140%" alt="" src="images/neurips_final.gif" class="hoverZoomLink"></a>
+                    <a href="images/neurips_final.gif"><img style="width:140%;max-width:140%;display:block;margin-left:-20%;" alt="" src="images/neurips_final.gif" class="hoverZoomLink"></a>
               </div>
             </div>
             </td>
@@ -284,9 +317,9 @@
 
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
+              <div class="one" style="margin:auto;">
                 <div class="two" id='bmvc_image'>
-                    <a href="images/arxiv_tweet10.gif"><img style="width:140%;max-width:140%" alt="profile photo" src="images/arxiv_tweet10.gif" class="hoverZoomLink"></a>
+                    <a href="images/arxiv_tweet10.gif"><img style="width:140%;max-width:140%;display:block;margin-left:-20%;" alt="profile photo" src="images/arxiv_tweet10.gif" class="hoverZoomLink"></a>
               </div>
             </div>
             </td>
